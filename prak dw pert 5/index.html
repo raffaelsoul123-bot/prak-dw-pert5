@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DWNews - Portal Berita Terkini</title>
+
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="container navbar">
+            <h1 class="logo">DW<span>News</span></h1>
+
+            <nav>
+                <a href="#">Beranda</a>
+                <a href="#teknologi">Teknologi</a>
+                <a href="#olahraga">Olahraga</a>
+                <a href="#nasional">Nasional</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container main-layout">
+
+        <!-- Berita Utama -->
+        <section class="headline" id="nasional">
+            <h2>Berita Utama</h2>
+
+            <article class="card main-card">
+
+                <!-- Gambar Berita Utama -->
+                <img
+                    class="main-image"
+                    src="https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1200&q=80"
+                    alt="Koran dan informasi berita"
+                >
+
+                <div class="content">
+                    <span class="category">Elektronik</span>
+
+                    <h3>
+                        Perkembangan Barang Elektronik Semakin Pesat
+                        di Tahun 2036
+                    </h3>
+
+                    <p>
+                        Perkembangan teknologi membuat barang elektronik
+                        semakin canggih dan membantu aktivitas masyarakat
+                        sehari-hari.
+                    </p>
+
+                    <a href="#teknologi" class="read-more">
+                        Baca selengkapnya →
+                    </a>
+                </div>
+
+            </article>
+        </section>
+
+        <!-- Sidebar / Berita Terbaru -->
+        <aside class="sidebar">
+            <h2>Berita Terbaru</h2>
+
+            <article class="card small-card" id="olahraga">
+                <img
+                    src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=500&q=80"
+                    alt="Aktivitas olahraga"
+                >
+
+                <div class="small-content">
+                    <span class="category">Olahraga</span>
+                    <h4>Timnas Indonesia Raih Kemenangan Gemilang</h4>
+                    <small>10 menit yang lalu</small>
+                </div>
+            </article>
+
+            <article class="card small-card" id="teknologi">
+                <img
+                    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=500&q=80"
+                    alt="Laptop untuk belajar pemrograman"
+                >
+
+                <div class="small-content">
+                    <span class="category">Teknologi</span>
+                    <h4>Tips dan Trik Belajar Pemrograman C++ untuk Pemula</h4>
+                    <small>1 jam yang lalu</small>
+                </div>
+            </article>
+
+            <article class="card small-card">
+                <img
+                    src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=500&q=80"
+                    alt="Grafik pasar keuangan"
+                >
+
+                <div class="small-content">
+                    <span class="category">Bisnis</span>
+                    <h4>Harga Kripto Bergerak Stabil Pekan Ini</h4>
+                    <small>3 jam yang lalu</small>
+                </div>
+            </article>
+
+        </aside>
+
+    </main>
+
+    <!-- Berita Tambahan -->
+    <section class="container more-news">
+        <h2>Informasi Pilihan</h2>
+
+        <div class="news-grid">
+
+            <article class="card news-item">
+                <img
+                    src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=700&q=80"
+                    alt="Tim bekerja menggunakan teknologi"
+                >
+
+                <div class="content">
+                    <span class="category">Teknologi</span>
+                    <h3>Teknologi Digital Membantu Kegiatan Belajar</h3>
+                    <p>
+                        Perangkat digital dapat membantu pelajar mencari
+                        informasi dan mengembangkan keterampilan baru.
+                    </p>
+                </div>
+            </article>
+
+            <article class="card news-item">
+                <img
+                    src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=700&q=80"
+                    alt="Orang-orang berdiskusi"
+                >
+
+                <div class="content">
+                    <span class="category">Nasional</span>
+                    <h3>Kolaborasi Masyarakat dalam Kegiatan Positif</h3>
+                    <p>
+                        Kerja sama dan komunikasi menjadi bagian penting
+                        dalam membangun lingkungan yang lebih baik.
+                    </p>
+                </div>
+            </article>
+
+            <article class="card news-item">
+                <img
+                    src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=700&q=80"
+                    alt="Buku catatan dan meja kerja"
+                >
+
+                <div class="content">
+                    <span class="category">Pendidikan</span>
+                    <h3>Tips Mengatur Waktu Belajar agar Lebih Efektif</h3>
+                    <p>
+                        Membuat jadwal dan menentukan prioritas dapat
+                        membantu aktivitas belajar menjadi teratur.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h3>DWNews</h3>
+            <p>Portal Berita Terkini — Informasi untuk Semua.</p>
+            <p>&copy; 2026 DWNews. Dibuat untuk tugas praktikum.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

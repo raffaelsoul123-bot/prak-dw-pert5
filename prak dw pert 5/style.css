@@ -1,0 +1,483 @@
+/* =====================================
+   1. RESET DAN PENGATURAN DASAR
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f1f5f9;
+    color: #1e293b;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =====================================
+   2. HEADER DAN NAVBAR
+===================================== */
+
+header {
+    background-color: #172554;
+    color: #ffffff;
+    padding: 18px 0;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: #f97316;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    color: #e2e8f0;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #fb923c;
+}
+
+/* =====================================
+   3. LAYOUT UTAMA
+===================================== */
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 28px;
+    align-items: start;
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+
+.headline,
+.sidebar {
+    min-width: 0;
+}
+
+.headline > h2,
+.sidebar > h2,
+.more-news > h2 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 18px;
+    padding-left: 12px;
+    border-left: 5px solid #f97316;
+    color: #172554;
+}
+
+/* =====================================
+   4. KARTU BERITA UTAMA
+===================================== */
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+    border: 1px solid #e2e8f0;
+}
+
+.main-card {
+    width: 100%;
+}
+
+.main-image {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    background-color: #cbd5e1;
+}
+
+.content {
+    padding: 22px;
+}
+
+.category {
+    display: inline-block;
+    background-color: #ffedd5;
+    color: #c2410c;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.content h3 {
+    font-size: 23px;
+    line-height: 1.4;
+    color: #172554;
+    margin-bottom: 12px;
+}
+
+.content p {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    color: #ea580c;
+    font-weight: 700;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.read-more:hover {
+    color: #9a3412;
+}
+
+/* =====================================
+   5. SIDEBAR BERITA TERBARU
+===================================== */
+
+.sidebar {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.sidebar > h2 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.small-card {
+    margin-bottom: 16px;
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.small-card:last-child {
+    margin-bottom: 0;
+}
+
+.small-card:hover,
+.news-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.12);
+}
+
+.small-card > img {
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+    background-color: #cbd5e1;
+}
+
+.small-content {
+    padding: 13px;
+}
+
+.small-content .category {
+    margin-bottom: 7px;
+}
+
+.small-content h4 {
+    color: #1e293b;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.small-content small {
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+/* =====================================
+   6. INFORMASI PILIHAN
+===================================== */
+
+.more-news {
+    margin-bottom: 45px;
+}
+
+.more-news > h2 {
+    margin-bottom: 22px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.news-item {
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.news-item > img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    background-color: #cbd5e1;
+}
+
+.news-item .content {
+    padding: 18px;
+}
+
+.news-item .content h3 {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.news-item .content p {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* =====================================
+   7. FOOTER
+===================================== */
+
+footer {
+    background-color: #172554;
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer h3 {
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 6px;
+}
+
+footer p {
+    color: #cbd5e1;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+/* =====================================
+   8. RESPONSIVE TABLET
+===================================== */
+
+@media (max-width: 900px) {
+    .container {
+        width: 92%;
+    }
+
+    .main-layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-top: 25px;
+    }
+
+    .sidebar {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .sidebar > h2 {
+        grid-column: 1 / -1;
+        margin-bottom: 0;
+    }
+
+    .small-card {
+        margin-bottom: 0;
+    }
+
+    .news-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* =====================================
+   9. RESPONSIVE MOBILE / HP
+===================================== */
+
+@media (max-width: 600px) {
+    .container {
+        width: 92%;
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .logo {
+        font-size: 27px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .main-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        margin-top: 22px;
+        margin-bottom: 30px;
+    }
+
+    .headline,
+    .sidebar {
+        width: 100%;
+    }
+
+    .headline > h2,
+    .sidebar > h2,
+    .more-news > h2 {
+        font-size: 21px;
+    }
+
+    .main-image {
+        height: 220px;
+    }
+
+    .content {
+        padding: 16px;
+    }
+
+    .content h3 {
+        font-size: 19px;
+    }
+
+    .content p {
+        font-size: 13px;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .sidebar > h2 {
+        margin-bottom: 15px;
+    }
+
+    .small-card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .small-card > img {
+        height: 180px;
+    }
+
+    .small-content h4 {
+        font-size: 14px;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .news-item > img {
+        height: 210px;
+    }
+
+    .more-news {
+        margin-bottom: 30px;
+    }
+
+    footer {
+        padding: 25px 10px;
+    }
+}
+
+/* =====================================
+   10. MOBILE KECIL
+===================================== */
+
+@media (max-width: 360px) {
+    .container {
+        width: 94%;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 8px 12px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .main-image {
+        height: 185px;
+    }
+
+    .content h3 {
+        font-size: 17px;
+    }
+
+    .small-card > img,
+    .news-item > img {
+        height: 170px;
+    }
+}
